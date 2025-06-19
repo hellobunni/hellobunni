@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import { Button } from '@/components/button'
 
 import type { Theme } from './types'
 
@@ -52,13 +53,15 @@ export const ThemeSelector: React.FC = () => {
   }, [setTheme])
 
   return (
-    <button
+    <Button
+      variant="link"
+      size="sm"
       onClick={toggleTheme}
-      aria-label="Toggle theme"
+      ariaLabel={`Switch to ${value === 'light' ? 'dark' : 'light'} mode`}
       className="w-auto bg-transparent gap-2 pl-0 md:pl-3 border-none p-2 rounded transition-colors"
     >
       {/* Show moon emoji for dark mode, sun emoji for light mode */}
       {value === 'dark' ? '🌙' : '☀️'}
-    </button>
+    </Button>
   )
 }

@@ -25,6 +25,10 @@ export const Header: GlobalConfig = {
         },
       },
     },
+    {
+      name: 'email',
+      type: 'text',
+    },
   ],
   hooks: {
     afterChange: [revalidateHeader],

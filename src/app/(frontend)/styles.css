@@ -1,95 +1,72 @@
 @import "tailwindcss";
+@import "./fonts.css";
+@custom-variant dark (&:where(.dark, .dark *));
 
-/* @layer base {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: unset;
-    font-weight: unset;
-  }
+:root {
+  /* Base colors */
+  --background: #FFFFFF;
+  --foreground: 222.2 84% 4.9%;
 
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+  /* Brand colors */
+  --primary: #C0C9EE; /* periwinkle */
+  --periwinkle: #A2AADB;
+  --ultra-violet: #898AC4;
 
-    --card: 240 5% 96%;
-    --card-foreground: 222.2 84% 4.9%;
+  /* Neutral colors */
+  --space-cadet: #3D365C;
+  --space-cadet-2: #210F37;
+  --white: #FFFFFF;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 240 6% 80%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.2rem;
-
-    --success: 196 52% 74%;
-    --warning: 34 89% 85%;
-    --error: 10 100% 86%;
-  }
-
-  [data-theme='dark'] {
-    --background: 0 0% 0%;
-    --foreground: 210 40% 98%;
-
-    --card: 0 0% 4%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 0, 0%, 15%, 0.8;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-
-    --success: 196 100% 14%;
-    --warning: 34 51% 25%;
-    --error: 10 39% 43%;
-  }
+  /* Semantic colors */
+  --success: 145 63% 49%;
+  --warning: 43 96% 56%;
+  --error: 0 72% 51%;
+  --vibrant-red: 0 72% 51%;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground min-h-[100vh] flex flex-col;
-  }
-} */
+@theme inline {
+  /* Base colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Brand colors */
+  --color-primary: var(--primary);
+  --color-periwinkle: var(--periwinkle);
+  --color-ultra-violet: var(--ultra-violet);
+
+  /* Neutral colors */
+  --color-space-cadet: var(--space-cadet);
+  --color-space-cadet-2: var(--space-cadet-2);
+  --color-white: var(--white);
+
+  /* Semantic colors */
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-vibrant-red: var(--vibrant-red);
+
+  /* Fonts */
+  --font-sans: "Montreal", sans-serif;
+  --font-display: "Montreal", sans-serif;
+  --font-heading: "Montreal", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Advanced font features */
+  --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-sans--font-variation-settings: "opsz" 32;
+}
+
+.dark {
+  --background: 0 0% 4%;       /* #0a0a0a */
+  --foreground: 0 0% 93%;      /* #ededed */
+  --space-cadet: 0 0% 93%;
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans); /* ✅ Now pulls from your design token */
+}
 
 html {
   opacity: 0;

@@ -4,29 +4,39 @@ import { CopyIcon } from '@payloadcms/ui/icons/Copy'
 import { useState } from 'react'
 
 export function CopyButton({ code }: { code: string }) {
-  const [text, setText] = useState('Copy')
+  const [isCopied, setIsCopied] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
-  function updateCopyStatus() {
-    if (text === 'Copy') {
-      setText(() => 'Copied!')
+  const handleCopy = async () => {
+    if (isCopied || isLoading) return
+
+    setIsLoading(true)
+    try {
+      await navigator.clipboard.writeText(code)
+      setIsCopied(true)
       setTimeout(() => {
-        setText(() => 'Copy')
-      }, 1000)
+        setIsCopied(false)
+      }, 2000)
+    } catch (error) {
+      console.error('Failed to copy code:', error)
+    } finally {
+      setIsLoading(false)
     }
   }
 
   return (
     <div className="flex justify-end align-middle">
       <Button
-        className="flex gap-1"
-        variant={'secondary'}
-        onClick={async () => {
-          await navigator.clipboard.writeText(code)
-          updateCopyStatus()
-        }}
+        variant="secondary"
+        size="sm"
+        icon={<CopyIcon />}
+        iconPosition="right"
+        loading={isLoading}
+        disabled={isCopied}
+        onClick={handleCopy}
+        ariaLabel={isCopied ? 'Code copied to clipboard' : 'Copy code to clipboard'}
       >
-        <p>{text}</p>
-        <CopyIcon />
+        {isCopied ? 'Copied!' : 'Copy'}
       </Button>
     </div>
   )

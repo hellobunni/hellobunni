@@ -1,6 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 import { CMSLink, CMSLinkType } from '@/components/Link'
+import { Button } from '@/components/button'
 import Link from 'next/link'
 import { PiRabbit } from 'react-icons/pi'
 import { IoMdClose } from 'react-icons/io'
@@ -39,13 +40,13 @@ const MobileNav = ({ navItems, onClose, className }: MobileNavProps) => {
         <Link href="/">
           <PiRabbit size={45} />
         </Link>
-        <button
+        <Button
+          variant="link"
+          size="sm"
+          icon={<IoMdClose size={28} />}
           onClick={onClose}
-          className="p-2 hover:bg-gray-100 rounded-md transition-colors"
-          aria-label="Close mobile menu"
-        >
-          <IoMdClose size={28} />
-        </button>
+          ariaLabel="Close mobile menu"
+        />
       </div>
 
       <ul role="list" className="-mx-2 space-y-1">
