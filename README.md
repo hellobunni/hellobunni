@@ -1,67 +1,56 @@
-# Payload Blank Template
+# 👩🏽‍💻 Bryanna Lynae Gardner (aka Bunni)
 
-This template comes configured with the bare minimum to get started on anything you need.
+Hi! I’m Bree — a Full-Stack Engineer specializing in **frontend UI/UX systems**, building sleek web experiences with a bold aesthetic 🧁✨  
+I blend clean code, powerful design, and creative energy to help high-end companies (and fun side projects) come to life on the web 💻💅
 
-## Quick start
+---
 
-This template can be deployed directly from our Cloud hosting and it will setup MongoDB and cloud S3 object storage for media.
+### 🧠 What I Do
+- 🎨 **UI Engineering & Design Systems** (Next.js + Tailwind CSS + Storybook)
+- 🛠️ **Full-Stack Web Dev** (TypeScript, PayloadCMS, PostgreSQL)
+- 🧱 **Component Libraries** (Atomic Design, scalable architecture)
+- 🎬 **Content Creator** @ [LateBloom3rLyn](https://www.youtube.com/@latebloom3rlyn)
+- 💼 Founder of [Bunni Digital](https://jagaesthetic.com)
 
-## Quick Start - local setup
+---
 
-To spin up this template locally, follow these steps:
+### 🔧 Current Projects
+- 🐰 [HelloBunni](https://github.com/bryannagardner) – a personal productivity + ADHD accountability app  
+- 🧁 `next-bunni-stack` – my aesthetic boilerplate for modern web projects  
+- ✨ UI Component Library with Tailwind, Motion, and Storybook 9  
+- 📈 `Genii` – A finance app for tracking income, bills, and goal-based savings
 
-### Clone
+---
 
-After you click the `Deploy` button above, you'll want to have standalone copy of this repo on your machine. If you've already cloned this repo, skip to [Development](#development).
+### 🔥 Tech I Love
+![NextJS](https://img.shields.io/badge/-Next.js-000?style=flat&logo=nextdotjs)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=flat&logo=tailwindcss)
+![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript)
+![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=flat&logo=storybook)
+![Framer Motion](https://img.shields.io/badge/-Motion-000000?style=flat&logo=framer)
+![Jotai](https://img.shields.io/badge/-Jotai-1E1E1E?style=flat&logo=atom)
+![PayloadCMS](https://img.shields.io/badge/-PayloadCMS-1E1E1E?style=flat&logo=data:image/svg+xml;base64,...)  
+...and a lil bit of ✨anime, design tokens, and API wizardry
 
-### Development
+---
 
-1. First [clone the repo](#clone) if you have not done so already
-2. `cd my-project && cp .env.example .env` to copy the example environment variables. You'll need to add the `MONGODB_URI` from your Cloud project to your `.env` if you want to use S3 storage and the MongoDB database that was created for you.
+### 📸 Life Outside of Code
+- 🎮 Nerdy stuff: anime, comics, and gaming
+- 🏋🏽‍♀️ Fitness baddie: glute days are sacred
+- 🐶 Dog mom to Astro, my fluffy Samoyed
+- ✈️ Remote lifestyle & ✨digital nomad in training
+- 🧠 Navigating ADHD & BPD with grace, grit & tech
 
-3. `pnpm install && pnpm dev` to install dependencies and start the dev server
-4. open `http://localhost:3000` to open the app in your browser
+---
 
-That's it! Changes made in `./src` will be reflected in your app. Follow the on-screen instructions to login and create your first admin user. Then check out [Production](#production) once you're ready to build and serve your app, and [Deployment](#deployment) when you're ready to go live.
+### 📬 Let’s Connect
+- [📧 Email](mailto:bryanna@jagaesthetic.com)
+- [🌐 Website](https://jagaesthetic.com)
+- [📷 IG: @latebloom3rlyn](https://www.instagram.com/latebloom3rlyn)
+- [📺 YouTube](https://www.youtube.com/@latebloom3rlyn)
+- [🐦 Twitter/X](https://twitter.com/latebloom3rlyn)
+- [💼 LinkedIn](https://www.linkedin.com/in/bryannagardner)
 
-#### Docker (Optional)
+---
 
-If you prefer to use Docker for local development instead of a local MongoDB instance, the provided docker-compose.yml file can be used.
-
-To do so, follow these steps:
-
-- Modify the `MONGODB_URI` in your `.env` file to `mongodb://127.0.0.1/<dbname>`
-- Modify the `docker-compose.yml` file's `MONGODB_URI` to match the above `<dbname>`
-- Run `docker-compose up` to start the database, optionally pass `-d` to run in the background.
-
-## How it works
-
-The Payload config is tailored specifically to the needs of most websites. It is pre-configured in the following ways:
-
-### Collections
-
-See the [Collections](https://payloadcms.com/docs/configuration/collections) docs for details on how to extend this functionality.
-
-- #### Users (Authentication)
-
-  Users are auth-enabled collections that have access to the admin panel.
-
-  For additional help, see the official [Auth Example](https://github.com/payloadcms/payload/tree/main/examples/auth) or the [Authentication](https://payloadcms.com/docs/authentication/overview#authentication-overview) docs.
-
-- #### Media
-
-  This is the uploads enabled collection. It features pre-configured sizes, focal point and manual resizing to help you manage your pictures.
-
-### Docker
-
-Alternatively, you can use [Docker](https://www.docker.com) to spin up this template locally. To do so, follow these steps:
-
-1. Follow [steps 1 and 2 from above](#development), the docker-compose file will automatically use the `.env` file in your project root
-1. Next run `docker-compose up`
-1. Follow [steps 4 and 5 from above](#development) to login and create your first admin user
-
-That's it! The Docker instance will help you get up and running quickly while also standardizing the development environment across your teams.
-
-## Questions
-
-If you have any issues or questions, reach out to us on [Discord](https://discord.com/invite/payload) or start a [GitHub discussion](https://github.com/payloadcms/payload/discussions).
+> ✨ Always blooming. Always building. Always a baddie in tech. ✨
