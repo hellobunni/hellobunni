@@ -1,4 +1,4 @@
-# 👩🏽‍💻 Bryanna Lynae Gardner (aka Bunni)
+# 👩🏽‍💻 Bree Gardner
 
 Hi! I’m Bree — a Full-Stack Engineer specializing in **frontend UI/UX systems**, building sleek web experiences with a bold aesthetic 🧁✨  
 I blend clean code, powerful design, and creative energy to help high-end companies (and fun side projects) come to life on the web 💻💅
@@ -15,7 +15,6 @@ I blend clean code, powerful design, and creative energy to help high-end compan
 ---
 
 ### 🔧 Current Projects
-- 🐰 [HelloBunni](https://github.com/bryannagardner) – a personal productivity + ADHD accountability app  
 - 🧁 `next-bunni-stack` – my aesthetic boilerplate for modern web projects  
 - ✨ UI Component Library with Tailwind, Motion, and Storybook 9  
 - 📈 `Genii` – A finance app for tracking income, bills, and goal-based savings
@@ -35,20 +34,16 @@ I blend clean code, powerful design, and creative energy to help high-end compan
 ---
 
 ### 📸 Life Outside of Code
-- 🎮 Nerdy stuff: anime, comics, and gaming
-- 🏋🏽‍♀️ Fitness baddie: glute days are sacred
+- 🎮 Nerdy stuff: anime, comics (Golden Age), and gaming
 - 🐶 Dog mom to Astro, my fluffy Samoyed
 - ✈️ Remote lifestyle & ✨digital nomad in training
-- 🧠 Navigating ADHD & BPD with grace, grit & tech
 
 ---
 
 ### 📬 Let’s Connect
-- [📧 Email](mailto:bryanna@jagaesthetic.com)
+- [📧 Email](mailto:brylyngardner@gmail.com)
 - [🌐 Website](https://jagaesthetic.com)
-- [📷 IG: @latebloom3rlyn](https://www.instagram.com/latebloom3rlyn)
-- [📺 YouTube](https://www.youtube.com/@latebloom3rlyn)
-- [🐦 Twitter/X](https://twitter.com/latebloom3rlyn)
+- [📷 IG: @latebloom3rlyn](https://www.instagram.com/breezybreeg)
 - [💼 LinkedIn](https://www.linkedin.com/in/bryannagardner)
 
 ---
